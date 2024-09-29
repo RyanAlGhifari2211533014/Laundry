@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FCE4EC">
+
+    <!-- Button Tambah Pelanggan -->
+    <Button
+        android:id="@+id/btnTambahPelanggan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FF03DAC5"
+        android:text="Tambah Pelanggan"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="18sp"/>
+
+    <!-- CardView 1: Fulan -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <TextView
+                android:id="@+id/tvNamaPelanggan1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fulan"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FF018786" />
+            <TextView
+                android:id="@+id/tvNomorPelanggan1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0853xxxx"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView 2: Fulanah -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <TextView
+                android:id="@+id/tvNamaPelanggan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fulanah"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FF018786" />
+            <TextView
+                android:id="@+id/tvNomorPelanggan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0821xxxx"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView 3: Dia -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <TextView
+                android:id="@+id/tvNamaPelanggan3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dia"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FF018786" />
+            <TextView
+                android:id="@+id/tvNomorPelanggan3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0831xxxx"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
