@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <FrameLayout
-        android:id="@+id/frameLayout"
+        android:id="@+id/framelayout"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:background="#FF03DAC5"
+        android:background="@color/red"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
@@ -29,113 +30,135 @@
                 android:textSize="25sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent "/>
+
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="4dp"
-                android:text="Welcome to CuciIn Apps, Masnoer"
+                android:text="Welcome to Happy Laundry Apps, Khoiri"
                 android:textColor="@color/white"
                 android:textSize="15sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/textView2" />
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </FrameLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="150dp"
         android:orientation="vertical"
         android:padding="@dimen/lg"
+        android:background="@color/orangecerah"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         tools:layout_editor_absoluteX="0dp">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:weightSum="2"
-            android:orientation="horizontal">
+            android:layout_height="173dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
             <androidx.cardview.widget.CardView
-                android:id="@+id/laundryCard"
+                android:id="@+id/cvLaundry"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/md"
+                android:layout_margin="@dimen/lg"
                 android:layout_weight="1"
                 app:cardCornerRadius="@dimen/lg">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:orientation="vertical"
-                    android:padding="@dimen/lg"
-                    tools:ignore="UseCompoundDrawables">
+                    android:padding="@dimen/lg">
+
+
                     <ImageView
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:src="@drawable/ic_laundry" />
+                        app:srcCompat="@drawable/ic_laundrt" />
+
                     <TextView
-                        android:textStyle="bold"
                         android:layout_width="wrap_content"
-                        android:layout_marginTop="@dimen/sm"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/sm"
                         android:text="Laundry"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
-                android:id="@+id/layananCard"
+                android:id="@+id/cvLayanan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/md"
+                android:layout_margin="@dimen/lg"
                 android:layout_weight="1"
                 app:cardCornerRadius="@dimen/lg">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:orientation="vertical"
                     android:padding="@dimen/lg">
+
+
                     <ImageView
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:src="@drawable/ic_service" />
+                        app:srcCompat="@drawable/ic_service" />
+
                     <TextView
-                        android:textStyle="bold"
-                        android:layout_marginTop="@dimen/sm"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/sm"
                         android:text="Layanan"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:weightSum="2"
             android:orientation="horizontal">
+
+
             <androidx.cardview.widget.CardView
-                android:id="@+id/pelangganCard"
+                android:id="@+id/cvPelanggan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/md"
                 android:layout_weight="1"
                 app:cardCornerRadius="@dimen/lg">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:orientation="vertical"
                     android:padding="@dimen/lg">
+
+
                     <ImageView
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:src="@drawable/ic_pelanggan" />
+                        app:srcCompat="@drawable/ic_customer" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -143,36 +166,44 @@
                         android:layout_marginTop="@dimen/sm"
                         android:text="Pelanggan"
                         android:textSize="15sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
-                android:id="@+id/promoCard"
+                android:id="@+id/cvPromo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/md"
                 android:layout_weight="1"
                 app:cardCornerRadius="@dimen/lg">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:orientation="vertical"
                     android:padding="@dimen/lg">
+
+
                     <ImageView
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:src="@drawable/ic_promo" />
+                        app:srcCompat="@drawable/ic_promo"
+                        />
+
                     <TextView
-                        android:textStyle="bold"
-                        android:layout_marginTop="@dimen/sm"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/sm"
                         android:text="Promo"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
+
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

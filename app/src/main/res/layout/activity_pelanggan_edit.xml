@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/lg"
+    android:background="@color/orangeputih"
+    tools:context=".pelanggan.PelangganEditActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/lg">
+
+        <TextView
+            android:textColor="@color/yellow"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/lg"
+            android:textSize="23dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EDIT PELANGGAN" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+            <EditText
+                android:id="@+id/edPelEditNama"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawablePadding="@dimen/sm"
+                android:drawableLeft="@drawable/ic_username"
+                android:layout_marginTop="10dp"
+                android:padding="@dimen/md"
+                android:background="@drawable/border_custom"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="@dimen/lg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/edPelEditEmail"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_custom"
+                android:drawableLeft="@drawable/ic_mail"
+                android:drawablePadding="@dimen/sm"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/md" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="@dimen/lg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HP"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/edPelEditHp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_custom"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="@dimen/sm"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/md" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+            <Button
+                android:id="@+id/btnPelEditSimpan"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button2"
+                android:text="Simpan"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnPelEditHapus"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:text="Hapus"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnPelEditBatal"
+                android:layout_marginLeft="10dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Batal"
+                android:background="@drawable/custom_button3"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

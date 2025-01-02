@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,22 +15,34 @@
         android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".layanan.LayananEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelanggan.PelangganEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".layanan.LayananAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelanggan.PelangganAddActivity"
+            android:exported="false" />
+        <activity
             android:name=".PromoActivity"
             android:exported="false" />
         <activity
-            android:name=".PelangganActivity"
+            android:name=".pelanggan.PelangganActivity"
             android:exported="false" />
         <activity
-            android:name=".LayananActivity"
+            android:name=".layanan.LayananActivity"
             android:exported="false" />
         <activity
-            android:name=".AddLaundryActivity"
+            android:name=".LaundryActivity"
             android:exported="false" />
         <activity
             android:name=".DetailLaundryActivity"
             android:exported="false" />
         <activity
-            android:name=".LaundryActivity"
+            android:name=".AddLaundryActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
@@ -41,8 +55,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
